@@ -1,0 +1,873 @@
+tty
+ 0 - 63
+  pwd
+   cd
+su - suresh
+pwd
+cd Desktop/
+pwd
+ls
+cat > file1
+ cat file1
+ cat >> file1
+cat file1
+ls
+touch f1 f2 f3 f4
+ls
+ls -l
+stat f1
+touch -a f1
+stat f1
+touch -m f1
+stat f1
+rm f1
+
+stat f1
+rm f1
+rm -rf f2
+ls
+history
+mkdir dir1
+mkdir dir2 dir3 dir4 dir5 dir6
+ mkdir -p /asd/asd1/asd2/asd3/asd4
+mkdir -p cgi/cgi1/cgi2/cgi3
+ls
+ ls -R /asd
+ls
+ cd /
+ls
+ls -R asd
+cd /root/Desktop/
+ls -R cgi
+rmdir cgi
+rm -rf cgi
+rmdir dir2
+ls
+cp file1 file2
+cat file2
+
+cd /root/Desktop/
+ls -R cgi
+rmdir cgi
+rm -rf cgi
+rmdir dir2
+ls
+cp file1 file2
+ cat file2
+mv file1 file3
+ ls
+ mv file2 dir1/file2
+ls
+cd dir1
+ls
+mv file2 /root/Desktop/file4
+ ls
+cd ..
+ ls
+ mv file4 .file4
+ls
+ls -a
+cd .file4 file4
+ mv .file4 file4
+ ls
+touch a aa aaa aaa1 aa2 a1 a2 2abb bb bbb bb2 b c ccc cc4 c3 c dd dd1 dd3 d2 d4 e ee fff f h hhh fff
+
+ ls -l a*
+ls -l a?
+ ls -l a??
+ls -l [abc]
+ls -l [abc]*
+ls -l [a-h]
+ ls -l [a-h]?
+ cat /etc/passwd | more
+ls
+ cp file4 hrdfile4
+ rm -rf hrdfile4
+ ln file4 hrdfile4
+ ln -s file4 sftfile4
+ls -li
+cat > file4
+cat hrdfile4
+cat sftfile4
+cat >> file4
+ cat sftfile4
+ cat hrdfile4
+ rm -rf file4
+cat hrdfile4
+cat sftfile4
+ls -li
+history
+find /etc -name "*.conf"
+find /etc -name "*.conf" -type f
+ls -l /etc/sudo.conf
+ find /etc -name "*.conf" -type d
+ find . -size 1024c
+  find . -size -1024c
+ find . -size +1024c
+ find . -atime 1     To find files by modification time use the -mtime option followed by the number of days to look for. The number can be a positive or negative value. A negative                            value equates to less then so -1 will find files modified within the last day. Similarly +1 will find files modified more than one day ago.
+find . -atime -1
+ find . -atime +1
+find /etc  -atime +1
+cp /etc/passwd /tmp/passwd
+cat /tmp/passwd
+grep root /tmp/passwd
+ grep -c root /tmp/passwd
+ grep -n root /tmp/passwd
+  grep -v root /tmp/passwd
+  grep -n root /tmp/passwd
+grep -v root /tmp/passwd
+  grep RooT /tmp/passwd
+  grep -i RooT /tmp/passwd
+  grep -E "root|suresh" /tmp/passwd
+  grep "^root" /tmp/passwd
+  grep "root$" /tmp/passwd
+  grep "bash$" /tmp/passwd
+  cat /tmp/passwd
+  grep suresh /tmp/passwd
+  grep -v  suresh /tmp/passwd
+  ls -l
+  ls -l  | grep "^l"
+  ls -l  | grep -v "^l"
+  history
+  echo $0
+date
+  date +%a
+  date +%A
+  date +%H
+  date +%M
+  date +%m
+  date +%Y
+  date +%y
+    date +%D
+  man date
+  uname
+  uname -r
+  uname -a
+  who
+  tty
+  who
+  whoami
+  who am i
+  su - suresh
+  uptime
+  date
+  uptime
+  a=1
+  echo "$a"
+  top
+  uptime
+  top
+  uptime
+date
+  date | tee file123
+  cat file123
+  lastlog
+  lastlog | more
+
+ls -ld asd
+  cd /root/Desktop/
+  cd /bin
+  ls
+  ls | more
+  cd /sbin
+  ls | more
+  cd /etc
+  ls
+  cd /dev v
+  ls
+  cd /lib
+  ls
+  cd /var
+  ls
+  cd /boot
+  ls
+  cd /tmp
+  ls
+  cd /proc
+  cat /proc/cpuinfo
+  cat /proc/meminfo
+  cat /proc/meminfo | more
+  cd /media/
+  ls
+  cd
+  cd Desktop/
+  ls
+  ls -l
+  umask
+  vim /etc/profile
+  echo $UID
+  id
+  umask
+  umask 153
+  umask
+  touch asd123
+  mkdir dir123
+   ls -l asd123
+  ls -ld dir123
+  ls
+  ls -l a
+  umask 022
+  umask
+  chmod u+x,g+wx,o-r a
+  ls -l a
+  chmod a=rw a
+  ls -l a
+  chmod 754 a
+  ls -l a
+  chmod u=r a
+  ls -l a
+
+ tty
+  ps
+  ps a
+  ps au
+  ps aux
+  top
+  renice -19 4543
+  renice +19 4543
+  kill -9 1804
+  kill -9 top
+  pkill -9 top
+  kill -l
+  sleep 100
+  jobs
+  jobs -l
+  bg %1
+  jobs -l
+sleep 100 &
+  662  jobs -l
+  663  fg %2
+  664  jobs -l
+  665  bg %2
+ps aux | grep systemd
+  696  tty
+  697  ps aux | grep /dev/pts/1
+  698  echo $0
+  699  ps
+  700  sleep 123 &
+  701  jobs -l
+  702  top -b
+  703  kill -9 8732  8728
+  704  jobs
+  705  vi test.c
+  706  jobs
+  707  find / > allfiles.txt 2> /dev/null
+  708  sleep 234 &
+  709  sleep 335
+  710  sleep 345 &
+  711  jobs
+  712  date
+  713  dat
+  714  jobs -l
+  715  kill -9 8819
+  716  bg %8
+  717  jobs -l
+  718  fg %9
+  719  nice -n -19 sleep 1000 &
+  720  jobs
+  721  ps -l
+  722  fg %8
+  723  jobs -l
+  724  renice +19 8887
+  725  jobs -l
+  726  ps -l
+  727  kill -9 8887
+ 
+729  tty
+  730  crontab -e
+  731  echo "$USER"
+  732  date
+  733  crontab -l
+  734  crontab -r
+  735  crontab -l
+  736  vim sample.sh
+  737  crontab -e
+  738  ls
+  739  date
+  740  vim /etc/cron.deny
+  741  cat >> /etc/cron.deny
+  742  cat /etc/cron.deny
+  743  vim /etc/cron.deny
+  744  vim /etc/cron.allow
+  745  vim /etc/cron.deny
+  746  crontab -e -u suresh
+  747  echo " Hello "
+  748  echo " Hello " > hello.txt            [5:20 PM] Suresh.K (Guest)
+    
+ crontab -l
+23    16    08    *    *    sh /root/Desktop/sample.sh > /root/script.txt
+
+
+[root@server Desktop]# 
+
+
+
+
+  749  cat hello.txt
+  750  crontab -e -u suresh
+  751  date
+  752  cd /root/
+  753  ls
+  754  cat script.txt
+  755  at now
+  756  cat ls.txt
+  757  at now +10min
+  758  at 17:30
+  759  at -l
+  760  atrm 3
+  761  at -l
+  762  atrm 2
+dd -- to delete entire line 
+dw -- to delete a single word 
+x  -- to delete a character
+
+ 
+
+yy -- to copy the entire line 
+yw -- to copy a single word 
+r -- to replace a character
+p --- paste 
+u -- undo 
+
+ 
+
+cc -- cut the entire line 
+cw --  cut a single word 
+G -- cursor moves to last line of the file 
+gg -- cursor moves to first line of the file 
+w -- cursor moves word by word 
+h -- cursor moves left hand side 
+j -- down
+k --- up 
+l  --- cursor moves right hand side 
+
+ 
+
+save & Exit mode 
+ press esc : 
+ 
+ :q  --- quit
+ :q! --- forcefully quit 
+ :w  --- save
+ :wq  --- save & quit 
+ :wq! --- forcefully save & quit 
+ :set nu --- to set the line numbers 
+ :set nonu --- remove the line numbers 
+ /word --- search a word in editor 
+ :%s/redhat/unix/g --- replace the word globally 
+ 
+ 
+ vim than vi 
+ 
+ vi file 
+ vim -o file1 file2 
+ vim -O file1 file2 
+
+838  vim /etc/bashrc
+  839  vim /etc/bash
+  840  vim /etc/bashrc
+  841  ls
+  842  cat file3 file10
+  843  cat file3 file10 > file11
+  844  cat file11
+  845  cat file3 file10 > file11 2> file12
+  846  cat file11
+  847  cat file12
+  848  cat file3 file10 > file11 2> &1
+  849  cat file3 file10 > file11 2>&1
+  850  cat file11
+ cat /tmp/passwd
+  925  head /tmp/passwd
+  926  head -3 /tmp/passwd
+  927  tail /tmp/passwd
+  928  tail -4 /tmp/passwd
+  929  cat /tmp/passwd
+  930  cut -d":" -f1 /tmp/passwd
+  931  cut -d":" -f1,2 /tmp/passwd
+  932  cut -d":" -f1,2,3 /tmp/passwd
+  933  cut -d":" -f1-4 /tmp/passwd
+  934  cut -d":" -f1-4 /tmp/passwd | more
+  935  cut -d":" -f1-4 /tmp/passwd | less
+  936  grep root /tmp/passwd
+  937  grep root /tmp/passwd | cut -d":" -f1,6
+  938  cut -d":" -f1-4 /tmp/passwd
+  939* cut -d":" -f1-4 /tmp/passwd
+  940  vim /tmp/passwd
+  941  cut -d"@" -f1-4 /tmp/passwd | less
+  942  vim /tmp/passwd
+ 942  vim /tmp/passwd
+  943  cut -c 1-5 /tmp/passwd
+  944  cut -c 1,3,5  /tmp/passwd
+  945  cd
+  946  grep root /tmp/passwd | cut -d":" -f1,6 > file1
+  947  cat file1
+  948  ps aux
+  949  ps aux | more
+  950  ps aux | cut -d" " -f2
+  951  ps aux | cut -d" " -f3
+  952  ps aux | cut -d" " -f4
+  953  ps aux | cut -d" " -f5
+  954  ps aux | cut -d" " -f10
+  955  ps aux | cut -d" " -f7, 10
+  956  ps aux | cut -d" " -f7,10
+  957  ps aux | cut -d" " -f5,10
+  958  ps aux | cut -d" " -f4,10
+  959  ps aux | cut -d" " -f1-10
+  960  ps aux | cut -d" " -f2-10
+  961  ps aux | cut -d" " -f2-10 | more
+  962  ps aux | cut -d" " -f2-10
+
+968  cat /tmp/passwd
+  969  cat /tmp/passwd  | more
+  970  sort /tmp/passwd
+  971  sort /tmp/passwd | more
+  972  sort -r /tmp/passwd | more
+  973  uniq /tmp/passwd
+  974  uniq -u /tmp/passwd
+  975  vim /tmp/passwd
+  976  uniq -d /tmp/passwd
+  977  vim /tmp/passwd
+  978  uniq -d /tmp/passwd
+  979  date
+  980  date > f1
+  981  date | tee f2
+  982  cat f2
+  983  cat /tmp/passwd
+  984  cat /tmp/passwd "[a-z]" "[A-Z]" </tmp/passwd
+  985  tr "[a-z]" "[A-Z]" </tmp/passwd
+  986  tr -s ":" </tmp/passwd
+  987  ls -l
+  988  ls -l | tr " " "|"
+  989  ls -l | tr -s " " "|"
+  990  tr -s ":" < /tmp/passwd
+  991  tr -s ":" </tmp/passwd
+  992  cat file1
+  993  cat < file1
+  994  wc /tmp/passwd
+  995  wc -l /tmp/passwd
+  996  wc -w /tmp/passwd
+  997  wc -c /tmp/passwd
+  998  ls -l /tmp/passwd
+  999  cat file1
+ 1000  vim file1
+ 1001  wc file1
+ 1002  ls -l file1
+ 1003  vim file1
+ 1004  ls -l file1
+ 1005  wc -l file1
+ 1006  wc -c file1
+ 1007  cat > file23
+ 1008  wc file123
+ 1009  vim file123
+ 1010  wc file23
+ 1011  ls -l file23
+ 1012  vim file23
+ 1013  ls -l file23
+ 1014  wc file23
+ wc (Word Count):
+	
+1041  wc -l /etc/passwd
+ 1042  pwd
+ 1043  ls -l | grep "^-"
+ 1044  ls -l | grep "^-" | wc -l
+ 1045  ls -l | grep "^d" | wc -l
+ 1046  ls -l /etc | grep ".conf$"
+ 1047  ls -l /etc | grep ".conf$" | grep "^-" | wc -l
+ 1048  wc -c /etc/passwd
+
+
+ls
+ 1073  tar -cvf /tmp/allfiles.tar *
+ 1074  cd /tmp
+ 1075  ls
+ 1076  tar -tf allfiles.tar
+ 1077  cd
+ 1078  ls
+ 1079  rm -rf *
+ 1080  ls
+ 1081  cp /tmp/allfiles.tar .
+ 1082  ls
+ 1083  tar -xvf allfiles.tar
+ 1084  ls
+ 1085  ls -l allfiles.tar
+ 1086  tar -cvzf allfiles.tar.gz allfiles.tar
+ 1087  ls -l allfiles.tar.gz
+ 1088  rm -rf allfiles.tar
+ 1089  tar -xvf allfiles.tar.gz
+ 1090  ls -l
+ 
+ 
+Shell Scripting 
+
+ 
+
+series of commands to execute 
+
+ 
+
+
+vi sample.sh 
+#!/bin/bash 
+
+ 
+
+
+User-Defined 
+int a = 10 
+a=10 
+b=redhat
+ 
+  
+Environment
+/etc/bashrc 
+export a=10 
+ 
+
+ 
+
+ 
+pre-defined
+$USER
+$ID
+$SHELL 
+$HOME 
+
+ 
+
+vi sample.sh   
+#!/bin/bash 
+a=10 
+b=redhat 
+echo "$a"
+echo "$b" 
+read c 
+echo " $c "
+
+ 
+
+d=`date`
+echo "$d"
+
+ 
+
+printenv 
+
+ 
+
+echo "$USER"
+echo "$ID"
+echo "$SHELL"
+
+ 
+
+
+Numeric             String 
+operators          Operators 
+==                 -eq
+<                   -lt
+>                   -gt
+<=                   -le 
+>=                  -ge
+!=                  -ne 
+
+ 
+
+logical Operators 
+and -a   &&
+or   -o   ||
+
+
+yum install tigervnc-server
+ su - suresh
+ vncpasswd 
+ exit 
+ cp /lib/systemd/system/vncserver@.service 
+ /etc/systemd/system/vncserver@:5903.service
+  vim /etc/systemd/system/vncserver@:5903.service 
+  firewall-cmd --add-port=5903/tcp
+   firewall-cmd --add-port=5903/tcp --permanent 
+   firewall-cmd --reload 
+   systemctl daemon-reload
+  systemctl start vncserver@:5903
+  systemctl enable vncserver@:5903
+  netstat -tulnp | grep vnc 
+  
+  vncviewer 
+  ipaddress:5903 
+
+
+network
+
+[12:25 PM] Suresh.K (Guest)
+    1000  ifconfig | more
+ 1001  ifconfig eno16777736 192.168.5.120
+ 1002  ifconfig | more
+ 1003  systemctl restart network
+ 1004  ifconfig | more
+ 1005  nmtui
+ 1006  systemctl restart network
+ 1007  ifconfig | more
+ 1008  cat /etc/sysconfig/network-scripts/ifcfg-eno16777736
+ 1009  nmtui
+ 1010  systemctl restart network
+ 1011  ifconfig | more
+ 1012  cat /etc/sysconfig/network-scripts/ifcfg-eno16777736
+ 1013  ifdown eno16777736
+ 1014  ifconfig | more
+ 1015  nmcli connection show
+ 1016  ifup eno16777736
+ 1017  ifconfig | more
+ 1018  ifup eno16777736
+ 1019  ifconfig | more
+ 1020  hostname
+ 1021  hostname desktop.example.com
+ 1022  hostname
+ 1023  bash
+ 1024  nmtui
+ 1025  bash
+ 1026  hostnamectl set-hostname server2.example.com
+ 1027  hostname
+ 1028  bash
+ 1029  systemctl restart NetworkManager
+ 1030  history
+ 
+ tar -cvf /tmp/allfiles.tar *
+ 1074  cd /tmp
+ 1075  ls
+ 1076  tar -tf allfiles.tar
+ 1077  cd
+ 1078  ls
+ 1079  rm -rf *
+ 1080  ls
+ 1081  cp /tmp/allfiles.tar .
+ 1082  ls
+ 1083  tar -xvf allfiles.tar
+ 1084  ls
+ 1085  ls -l allfiles.tar
+ 1086  tar -cvzf allfiles.tar.gz allfiles.tar
+ 1087  ls -l allfiles.tar.gz
+ 1088  rm -rf allfiles.tar
+ 1089  tar -xvf allfiles.tar.gz
+ 1090  ls -l
+
+65  ifconfig | more
+   66  nmcli dev status help s
+   67  nmcli dev status
+   68* nmcli connection add con-name eno33554992 ifname eno33554 autoconnect no type ethernet ip4 192.168.5.123 gw4 192.168.5.2
+   69  nmcli dev status
+   70  nmtui
+   71  systemctl restart network
+   72  nmcli dev status
+   73  systemctl restart network
+   74  nmcli dev status
+   75  ifconfig | more
+   76  nmtui
+   77  systemctl restart network
+   78  ifconfig | more
+   79  nmcli device status
+   80  history
+   81  cd /etc/sysconfig/network-scripts/
+   82  ls
+   83  vim ifcfg-eno33554992
+
+66  nmcli dev status help s
+   67  nmcli dev status
+   68* nmcli connection add con-name eno33554992 ifname eno33554 autoconnect no type ethernet ip4 192.168.5.123 gw4 192.168.5.2
+   69  nmcli dev status
+   70  nmtui
+   71  systemctl restart network
+   72  nmcli dev status
+   73  systemctl restart network
+   74  nmcli dev status
+   75  ifconfig | more
+   76  nmtui
+   77  systemctl restart network
+   78  ifconfig | more
+   79  nmcli device status
+   80  history
+   81  cd /etc/sysconfig/network-scripts/
+   82  ls
+   83  vim ifcfg-eno33554992
+   84  history
+   85  nmcli device status
+   86  ifconfig | more
+   87  nmcli connection add type bond ifname bond0 con-name bond0 mode active-backup primary eno33554992 miimon 200 ip4 192.168.5.140 gw4 192.168.5.2
+   88  nmcli connection add type bond-slave ifname eno33554992 master bond0
+   89  nmcli connection add type bond-slave ifname eno50332216 master bond0
+   90  ifup bond0
+   91  ifconfig | more
+   92  cd /proc/net/bonding/
+   93  cat bond0
+   94  ifdown eno33554992
+   95  ifup eno33554992
+   96  cat bond0
+   97  cd /etc/sysconfig/network-scripts/
+   98  ls
+   99  vim ifcfg-bond-slave-eno33554992
+  100  vim ifcfg-eno33554992
+  101  vim ifcfg-eno50332216
+  102  vim ifcfg-bond-slave-eno50332216
+  103  vim ifcfg-eno50332216
+  104  systemctl restart network
+  105  cd /proc/net/bonding/
+  106  cat bond0
+  107  ifup bond0
+  108  cat bond0
+  109  ifconfig | more
+  110  cd /etc/sysconfig/network-scripts/
+  111  ls
+  112  ifdown bond0
+  113  ifup bond0
+  114  ifconfig | more
+  115  cd /proc/net/bonding/
+  116  cat bond0
+  117  nmtui
+  118  ifup eno33554992
+  119  cd /etc/sysconfig/network-scripts/
+  120  vim ifcfg-eno33554992
+  121  ifup eno33554992
+  122  ifdown eno33554992
+  123  ifup eno33554992
+  124  ifup eno50332216
+  125  cat /proc/net/bonding/bond0
+ 
+00  tcpdump
+ 1001  tcpdump -i bond0
+ 1002  tcpdump -c 5 -i bond0
+ 1003  tcpdump -c 10 -i bond0
+ 1004  tcpdump -i bond0
+ 1005  tcpdump -c 10 -i bond0
+ 1006  tcpdump src port 22 -c 5
+ 1007  tcpdump dst port 22 -c 5
+ 1008  tcpdump dst port 22 -c 5 -w suresh.pcap
+ 1009  ls
+
+df -hT
+ 1014  cd /run/media/root/RHEL-7.2\ Server.x86_64/Packages/
+ 1015  ls
+ 1016  rpm -ivh zsh-5.0.2-14.el7.x86_64.rpm
+ 1017  rpm -q zsh
+ 1018  rpm -qc zsh
+ 1019  rpm -qd zsh
+ 1020  rpm -e zsh
+ 1021  rpm -q zsh
+ 1022  rpm -ivh zsh-5.0.2-14.el7.x86_64.rpm
+ 1023  rpm -Uvh zsh-5.0.2-14.el7.x86_64.rpm
+ 
+Yellow Dog update manager
+It resolve's dep's automatically 
+Any where in the network can able to install the 
+packages 
+
+ 
+
+
+yum install packagename 
+yum info packagename
+yum remove packagename
+yum list all 
+yum update packagename 
+
+ 
+
+
+yum centralised repository 
+
+ 
+
+
+ftp
+http 
+nfs 
+file
+
+ 
+
+
+check cd/dvd is mounted or not 
+go to cd/dvd 
+cd packages
+rpm -ivh vsftpd.version.release.arch.rpm 
+document root is /var/ftp/pub 
+mkdir /var/ftp/pub/packages
+copy packages from cd to /var/ftp/pub/packages 
+createrepo /var/ftp/pub/packages 
+systemctl restart vsftpd 
+systemctl enable vsftpd 
+
+ 
+
+
+to access the repository
+cd /etc/yum.repos.d 
+ls 
+mv * /tmp/
+vim server.repo 
+[server]
+name=server.repo
+baseurl=ftp://ipaddress/pub/packages
+baseurl=http://servername/
+enabled=1
+gpgcheck=0
+
+ 
+
+save & exit 
+
+ 
+
+yum clean all 
+ yum repolist 
+ yum install packagename
+ 
+/var/www/html
+
+ 
+
+baseurl=file:///path of the repo 
+
+
+yum install zsh
+ cd /run/media/root/RHEL-7.2\ Server.x86_64/Packages/
+ rpm -ivh vsftpd-3.0.2-10.el7.x86_64.rpm
+ cd /var/ftp/pub/
+ ls
+ mkdir packages
+ cd packages/
+ pwd
+ cp -v /run/media/root/RHEL-7.2\ Server.x86_64/Packages/* /var/ftp/pub/packages/
+ ls
+ pwd
+ createrepo /var/ftp/pub/packages/
+ systemctl restart vsftpd
+ systemctl enable vsftpd
+ cd /etc/yum.repos.d/
+ mv * /tmp/
+ vim server.repo
+ yum clean all
+ yum repolist
+ yum install zsh -y
+ history
+ cd
+ yum remove zsh -y
+ yum install zsh -y
+ yum install httpd -y
+ yum remove httpd -y
+ 
+ yum install yum-plugin-versionlock -y
+ yum versionlock list
+ yum versionlock add vsftpd
+ yum versionlock list
+ yum update all
+ yum versionlock delete vsftpd
+ yum versionlock list
+ yum history all
+ yum history list all
+ yum history info 11
+ yum history info 9
+ yum history list
+ yum history info 10
+ yum history undo 10
+	
+ 
+
